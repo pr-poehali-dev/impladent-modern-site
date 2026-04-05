@@ -43,12 +43,13 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Brand */
-    --brand-navy: #1a2e4a;
-    --brand-gold: #c9963a;
-    --brand-light: #f5f7fa;
-    --brand-text: #1c2b3a;
-    --brand-muted: #6b7f93;
+    /* Brand — палитра под логотип ИмплаДент */
+    --brand-navy: #1e3a5f;
+    --brand-blue: #4a90b8;
+    --brand-accent: #5ba3c9;
+    --brand-light: #eef5fa;
+    --brand-text: #1e3a5f;
+    --brand-muted: #6b8fa8;
   }
 }
 
@@ -96,13 +97,13 @@
   transition-delay: 0.5s;
 }
 
-/* Gold line accent */
+/* Accent line */
 .gold-line::before {
   content: "";
   display: block;
   width: 48px;
   height: 2px;
-  background: var(--brand-gold);
+  background: var(--brand-accent);
   margin-bottom: 16px;
 }
 
@@ -123,14 +124,14 @@
   left: 0;
   width: 0;
   height: 1px;
-  background: var(--brand-gold);
+  background: var(--brand-accent);
   transition: width 0.3s ease;
 }
 .nav-link:hover::after {
   width: 100%;
 }
 .nav-link:hover {
-  color: var(--brand-gold);
+  color: var(--brand-accent);
 }
 
 /* Star rating */

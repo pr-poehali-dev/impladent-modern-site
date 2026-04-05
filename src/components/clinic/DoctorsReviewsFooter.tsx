@@ -26,10 +26,10 @@ export default function DoctorsReviewsFooter({ scrollTo, doctorsRef, reviewsRef,
             <div className="reveal inline-block gold-line">
               <span className="text-xs tracking-widest uppercase text-[#6b7f93] font-medium">Специалисты</span>
             </div>
-            <h2 className="reveal reveal-delay-1 text-4xl lg:text-5xl font-bold text-[#1a2e4a] mt-2" style={{ fontFamily: "'Cormorant', serif" }}>
+            <h2 className="reveal reveal-delay-1 text-4xl lg:text-5xl font-bold text-[#1e3a5f] mt-2" style={{ fontFamily: "'Cormorant', serif" }}>
               Наши врачи
             </h2>
-            <p className="reveal reveal-delay-2 text-[#6b7f93] mt-3 max-w-xl mx-auto">
+            <p className="reveal reveal-delay-2 text-[#6b8fa8] mt-3 max-w-xl mx-auto">
               Команда сертифицированных специалистов с опытом работы от 10 лет
             </p>
           </div>
@@ -48,9 +48,9 @@ export default function DoctorsReviewsFooter({ scrollTo, doctorsRef, reviewsRef,
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="font-bold text-[#1a2e4a] text-base leading-tight mb-1" style={{ fontFamily: "'Cormorant', serif" }}>{d.name}</h3>
-                  <div className="text-[#c9963a] text-xs font-semibold uppercase tracking-wide mb-2">{d.spec}</div>
-                  <p className="text-[#6b7f93] text-xs leading-relaxed">{d.bio}</p>
+                  <h3 className="font-bold text-[#1e3a5f] text-base leading-tight mb-1" style={{ fontFamily: "'Cormorant', serif" }}>{d.name}</h3>
+                  <div className="text-[#4a90b8] text-xs font-semibold uppercase tracking-wide mb-2">{d.spec}</div>
+                  <p className="text-[#6b8fa8] text-xs leading-relaxed">{d.bio}</p>
                 </div>
               </div>
             ))}
@@ -67,7 +67,7 @@ export default function DoctorsReviewsFooter({ scrollTo, doctorsRef, reviewsRef,
             <div className="reveal inline-block gold-line">
               <span className="text-xs tracking-widest uppercase text-[#6b7f93] font-medium">Отзывы пациентов</span>
             </div>
-            <h2 className="reveal reveal-delay-1 text-4xl lg:text-5xl font-bold text-[#1a2e4a] mt-2" style={{ fontFamily: "'Cormorant', serif" }}>
+            <h2 className="reveal reveal-delay-1 text-4xl lg:text-5xl font-bold text-[#1e3a5f] mt-2" style={{ fontFamily: "'Cormorant', serif" }}>
               Что говорят о нас
             </h2>
           </div>
@@ -77,32 +77,32 @@ export default function DoctorsReviewsFooter({ scrollTo, doctorsRef, reviewsRef,
               <div
                 key={r.name}
                 className={`reveal reveal-delay-${i + 1} border p-6 hover:shadow-md transition-shadow duration-300 ${
-                  r.handwritten ? "border-[#c9963a] bg-[#fdf9f2]" : "border-gray-200 bg-white"
+                  r.handwritten ? "border-[#4a90b8] bg-[#eef5fa]" : "border-gray-200 bg-white"
                 }`}
               >
                 <div className="flex items-start justify-between mb-3">
                   <span className="text-[#f5a623] text-lg tracking-widest">★★★★★</span>
                   <span className={`text-[10px] font-semibold uppercase tracking-wide px-2 py-1 ${
-                    r.handwritten ? "bg-[#c9963a] text-white" : "bg-[#f5f7fa] text-[#6b7f93]"
+                    r.handwritten ? "bg-[#4a90b8] text-white" : "bg-[#eef5fa] text-[#6b8fa8]"
                   }`}>
                     {r.source}
                   </span>
                 </div>
                 <p
                   className={`text-sm leading-relaxed mb-4 ${
-                    r.handwritten ? "text-[#1a2e4a] text-base" : "text-[#6b7f93]"
+                    r.handwritten ? "text-[#1e3a5f] text-base" : "text-[#6b8fa8]"
                   }`}
                   style={r.handwritten ? { fontFamily: "'Caveat', cursive" } : {}}
                 >
                   «{r.text}»
                 </p>
                 <div className="flex items-center gap-3 pt-3 border-t border-gray-100">
-                  <div className="w-8 h-8 bg-[#1a2e4a] flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
+                  <div className="w-8 h-8 bg-[#1e3a5f] flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
                     {r.name[0]}
                   </div>
                   <div>
-                    <div className="font-semibold text-[#1a2e4a] text-sm">{r.name}</div>
-                    <div className="text-[#6b7f93] text-xs">{r.date}</div>
+                    <div className="font-semibold text-[#1e3a5f] text-sm">{r.name}</div>
+                    <div className="text-[#6b8fa8] text-xs">{r.date}</div>
                   </div>
                 </div>
               </div>
@@ -112,15 +112,15 @@ export default function DoctorsReviewsFooter({ scrollTo, doctorsRef, reviewsRef,
       </section>
 
       {/* ─── FORM ─── */}
-      <section id="contacts" className="py-20 lg:py-28 bg-[#1a2e4a]">
+      <section id="contacts" className="py-20 lg:py-28 bg-[#1e3a5f]">
         <div ref={contactsRef} className="container mx-auto px-4 lg:px-8 max-w-7xl">
           <div className="max-w-2xl mx-auto text-center">
             <div className="reveal flex justify-center mb-4">
-              <div className="w-12 h-0.5 bg-[#c9963a]" />
+              <div className="w-12 h-0.5 bg-[#5ba3c9]" />
             </div>
             <h2 className="reveal reveal-delay-1 text-4xl lg:text-5xl font-bold text-white mb-4" style={{ fontFamily: "'Cormorant', serif" }}>
               Запишитесь на<br />
-              <span className="italic text-[#c9963a]">бесплатную консультацию</span>
+              <span className="italic text-[#7ec4e0]">бесплатную консультацию</span>
             </h2>
             <p className="reveal reveal-delay-2 text-white/60 mb-10">
               Оставьте номер — перезвоним в течение 15 минут и подберём удобное время
@@ -141,7 +141,7 @@ export default function DoctorsReviewsFooter({ scrollTo, doctorsRef, reviewsRef,
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
-                  className="flex-1 bg-white/10 border border-white/20 text-white placeholder:text-white/40 px-5 py-4 focus:outline-none focus:border-[#c9963a] transition-colors"
+                  className="flex-1 bg-white/10 border border-white/20 text-white placeholder:text-white/40 px-5 py-4 focus:outline-none focus:border-[#5ba3c9] transition-colors"
                 />
                 <input
                   type="tel"
@@ -149,11 +149,11 @@ export default function DoctorsReviewsFooter({ scrollTo, doctorsRef, reviewsRef,
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   required
-                  className="flex-1 bg-white/10 border border-white/20 text-white placeholder:text-white/40 px-5 py-4 focus:outline-none focus:border-[#c9963a] transition-colors"
+                  className="flex-1 bg-white/10 border border-white/20 text-white placeholder:text-white/40 px-5 py-4 focus:outline-none focus:border-[#5ba3c9] transition-colors"
                 />
                 <button
                   type="submit"
-                  className="bg-[#c9963a] hover:bg-[#b8852e] text-white font-semibold px-8 py-4 transition-colors duration-200 whitespace-nowrap"
+                  className="bg-[#4a90b8] hover:bg-[#3a7fa6] text-white font-semibold px-8 py-4 transition-colors duration-200 whitespace-nowrap"
                 >
                   Записаться
                 </button>
@@ -167,8 +167,8 @@ export default function DoctorsReviewsFooter({ scrollTo, doctorsRef, reviewsRef,
       </section>
 
       {/* ─── MAP & FOOTER ─── */}
-      <footer id="map" className="bg-[#111d2b]">
-        <div className="w-full h-64 bg-[#1a2e4a] flex items-center justify-center relative overflow-hidden cursor-pointer group">
+      <footer id="map" className="bg-[#0f2035]">
+        <div className="w-full h-64 bg-[#1e3a5f] flex items-center justify-center relative overflow-hidden cursor-pointer group">
           <div
             className="absolute inset-0 opacity-10"
             style={{
@@ -176,7 +176,7 @@ export default function DoctorsReviewsFooter({ scrollTo, doctorsRef, reviewsRef,
             }}
           />
           <div className="text-center z-10 group-hover:scale-105 transition-transform duration-300">
-            <div className="w-14 h-14 bg-[#c9963a] flex items-center justify-center mx-auto mb-3">
+            <div className="w-14 h-14 bg-[#4a90b8] flex items-center justify-center mx-auto mb-3">
               <Icon name="MapPin" size={28} className="text-white" />
             </div>
             <div className="text-white font-bold text-xl" style={{ fontFamily: "'Cormorant', serif" }}>{CLINIC_ADDRESS}</div>
@@ -193,14 +193,13 @@ export default function DoctorsReviewsFooter({ scrollTo, doctorsRef, reviewsRef,
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl py-12">
           <div className="grid md:grid-cols-3 gap-10 lg:gap-16">
             <div>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-9 h-9 bg-[#c9963a] flex items-center justify-center">
-                  <span className="text-white font-bold text-lg" style={{ fontFamily: "'Cormorant', serif" }}>И</span>
-                </div>
-                <div>
-                  <div className="font-bold text-xl text-white" style={{ fontFamily: "'Cormorant', serif" }}>ИмплаДент</div>
-                  <div className="text-[10px] text-white/40 tracking-widest uppercase">Стоматологическая клиника</div>
-                </div>
+              <div className="mb-4">
+                <img
+                  src="https://cdn.poehali.dev/files/5816825e-2a51-42e5-882e-861318d12866.png"
+                  alt="ИмплаДент"
+                  className="h-10 w-auto object-contain"
+                  style={{ filter: "brightness(0) invert(1)" }}
+                />
               </div>
               <p className="text-white/40 text-sm leading-relaxed mb-5">
                 Имплантация зубов под ключ. Гарантия 10 лет. Опытные врачи. Современное оборудование.
@@ -210,7 +209,7 @@ export default function DoctorsReviewsFooter({ scrollTo, doctorsRef, reviewsRef,
                   href="https://t.me/impladent"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 border border-white/20 hover:border-[#c9963a] flex items-center justify-center text-white/60 hover:text-[#c9963a] transition-colors"
+                  className="w-10 h-10 border border-white/20 hover:border-[#5ba3c9] flex items-center justify-center text-white/60 hover:text-[#5ba3c9] transition-colors"
                   aria-label="Telegram"
                 >
                   <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
@@ -221,7 +220,7 @@ export default function DoctorsReviewsFooter({ scrollTo, doctorsRef, reviewsRef,
                   href="https://vk.com/impladent"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 border border-white/20 hover:border-[#c9963a] flex items-center justify-center text-white/60 hover:text-[#c9963a] transition-colors"
+                  className="w-10 h-10 border border-white/20 hover:border-[#5ba3c9] flex items-center justify-center text-white/60 hover:text-[#5ba3c9] transition-colors"
                   aria-label="ВКонтакте"
                 >
                   <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
@@ -235,19 +234,19 @@ export default function DoctorsReviewsFooter({ scrollTo, doctorsRef, reviewsRef,
               <h4 className="text-xl font-bold text-white mb-5" style={{ fontFamily: "'Cormorant', serif" }}>Контакты</h4>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <Icon name="MapPin" size={16} className="text-[#c9963a] mt-0.5 flex-shrink-0" />
+                  <Icon name="MapPin" size={16} className="text-[#5ba3c9] mt-0.5 flex-shrink-0" />
                   <span className="text-white/60 text-sm">{CLINIC_ADDRESS}</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <Icon name="Phone" size={16} className="text-[#c9963a] flex-shrink-0" />
-                  <a href={`tel:${CLINIC_PHONE_RAW}`} className="text-white/60 text-sm hover:text-[#c9963a] transition-colors">{CLINIC_PHONE}</a>
+                  <Icon name="Phone" size={16} className="text-[#5ba3c9] flex-shrink-0" />
+                  <a href={`tel:${CLINIC_PHONE_RAW}`} className="text-white/60 text-sm hover:text-[#5ba3c9] transition-colors">{CLINIC_PHONE}</a>
                 </li>
                 <li className="flex items-center gap-3">
-                  <Icon name="Mail" size={16} className="text-[#c9963a] flex-shrink-0" />
-                  <a href={`mailto:${CLINIC_EMAIL}`} className="text-white/60 text-sm hover:text-[#c9963a] transition-colors">{CLINIC_EMAIL}</a>
+                  <Icon name="Mail" size={16} className="text-[#5ba3c9] flex-shrink-0" />
+                  <a href={`mailto:${CLINIC_EMAIL}`} className="text-white/60 text-sm hover:text-[#5ba3c9] transition-colors">{CLINIC_EMAIL}</a>
                 </li>
                 <li className="flex items-center gap-3">
-                  <Icon name="Clock" size={16} className="text-[#c9963a] flex-shrink-0" />
+                  <Icon name="Clock" size={16} className="text-[#5ba3c9] flex-shrink-0" />
                   <span className="text-white/60 text-sm">{CLINIC_HOURS}</span>
                 </li>
               </ul>
@@ -261,7 +260,7 @@ export default function DoctorsReviewsFooter({ scrollTo, doctorsRef, reviewsRef,
                     <a
                       href={l.href}
                       onClick={(e) => { e.preventDefault(); scrollTo(l.href); }}
-                      className="text-white/50 text-sm hover:text-[#c9963a] transition-colors"
+                      className="text-white/50 text-sm hover:text-[#5ba3c9] transition-colors"
                     >
                       {l.label}
                     </a>
