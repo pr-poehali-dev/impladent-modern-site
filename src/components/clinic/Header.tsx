@@ -20,15 +20,13 @@ export default function Header({ scrolled, mobileOpen, setMobileOpen, scrollTo }
           <a
             href="#home"
             onClick={(e) => { e.preventDefault(); scrollTo("#home"); }}
-            className="flex items-center gap-3"
+            className="flex items-center"
           >
-            <div className="w-9 h-9 bg-[#1a2e4a] flex items-center justify-center flex-shrink-0">
-              <span className="text-white font-bold text-lg" style={{ fontFamily: "'Cormorant', serif" }}>И</span>
-            </div>
-            <div>
-              <div className="font-bold text-xl text-[#1a2e4a] leading-tight tracking-wide" style={{ fontFamily: "'Cormorant', serif" }}>ИмплаДент</div>
-              <div className="text-[10px] text-[#6b7f93] tracking-widest uppercase leading-tight">Стоматологическая клиника</div>
-            </div>
+            <img
+              src="https://cdn.poehali.dev/files/5816825e-2a51-42e5-882e-861318d12866.png"
+              alt="ИмплаДент"
+              className="h-10 lg:h-12 w-auto object-contain"
+            />
           </a>
 
           <nav className="hidden lg:flex items-center gap-6">
@@ -40,13 +38,13 @@ export default function Header({ scrolled, mobileOpen, setMobileOpen, scrollTo }
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
-            <a href={`tel:${CLINIC_PHONE_RAW}`} className="flex items-center gap-2 text-[#1a2e4a] font-semibold hover:text-[#c9963a] transition-colors">
-              <Icon name="Phone" size={16} className="text-[#c9963a]" />
+            <a href={`tel:${CLINIC_PHONE_RAW}`} className="flex items-center gap-2 text-[#1e3a5f] font-semibold hover:text-[#5ba3c9] transition-colors">
+              <Icon name="Phone" size={16} className="text-[#5ba3c9]" />
               {CLINIC_PHONE}
             </a>
           </div>
 
-          <button className="lg:hidden p-2 text-[#1a2e4a]" onClick={() => setMobileOpen(!mobileOpen)}>
+          <button className="lg:hidden p-2 text-[#1e3a5f]" onClick={() => setMobileOpen(!mobileOpen)}>
             <Icon name={mobileOpen ? "X" : "Menu"} size={24} />
           </button>
         </div>
@@ -61,8 +59,8 @@ export default function Header({ scrolled, mobileOpen, setMobileOpen, scrollTo }
               </a>
             ))}
           </nav>
-          <a href={`tel:${CLINIC_PHONE_RAW}`} className="flex items-center gap-2 text-[#1a2e4a] font-semibold">
-            <Icon name="Phone" size={16} className="text-[#c9963a]" />
+          <a href={`tel:${CLINIC_PHONE_RAW}`} className="flex items-center gap-2 text-[#1e3a5f] font-semibold">
+            <Icon name="Phone" size={16} className="text-[#5ba3c9]" />
             {CLINIC_PHONE}
           </a>
         </div>
