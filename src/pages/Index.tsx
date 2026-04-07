@@ -73,7 +73,7 @@ export default function Index() {
       {/* Floating phone button */}
       <a
         href={`tel:${CLINIC_PHONE_RAW}`}
-        className={`fixed bottom-6 right-6 z-40 w-14 h-14 bg-[#c9963a] hover:bg-[#b8852e] flex items-center justify-center shadow-2xl transition-all duration-300 ${
+        className={`fixed bottom-6 right-6 z-40 w-14 h-14 bg-[#4a90b8] hover:bg-[#3a7fa6] flex items-center justify-center shadow-2xl transition-all duration-300 ${
           scrolled ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
         }`}
       >
